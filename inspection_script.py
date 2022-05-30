@@ -131,7 +131,7 @@ a10_cmds_list = ['terminal length 0',
 
 end_cmd = '\n'
 
-sleep_time = 1
+sleep_time = 2
 
 supported_device_type = ['cisco', 'huawei', 'h3c', 'asa', 'nxos', 'a10']
 

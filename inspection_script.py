@@ -50,6 +50,9 @@ huawei_cmds_list = ['screen-length 0 temporary',
                     'display interface brief',
                     'display ip interface brief',
                     'display lldp neighbor brief',
+                    'display ip routing-table',
+                    'display ospf peer',
+                    'display ospf interface',
                     'display current-configuration']
 
 h3c_cmds_list = ['screen-length disable',

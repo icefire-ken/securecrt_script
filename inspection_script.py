@@ -31,12 +31,12 @@ cisco_cmds_list = ['terminal length 0',
                    'show ip eigrp neighbors',
                    'show ip eigrp interfaces',
                    'verify /md5 system:running-config',
-                   'show running-config']
+                   'show running-config',
+                   'terminal length 24']
 
 huawei_cmds_list = ['screen-length 0 temporary',
                     'display clock',
                     'display esn',
-                    'display elable brief',
                     'display environment',
                     'display power',
                     'dir flash:',
@@ -53,7 +53,8 @@ huawei_cmds_list = ['screen-length 0 temporary',
                     'display ip routing-table',
                     'display ospf peer',
                     'display ospf interface',
-                    'display current-configuration']
+                    'display current-configuration',
+                    'screen-length 24 temporary']
 
 h3c_cmds_list = ['screen-length disable',
                  'display clock',
@@ -77,7 +78,8 @@ h3c_cmds_list = ['screen-length disable',
                  'display ip routing-table',
                  'display ospf peer',
                  'display ospf interface',
-                 'display current-configuration']
+                 'display current-configuration',
+                 'undo screen-length disable']
 
 ciscoasa_cmds_list = ['terminal pager 0',
                       'show inventory',
@@ -100,7 +102,8 @@ ciscoasa_cmds_list = ['terminal pager 0',
                       'show eigrp neighbors',
                       'show eigrp interfaces',
                       'verify /md5 system:running-config',
-                      'show running-config']
+                      'show running-config',
+                      'terminal pager 24']
 
 nxos_cmds_list = ['terminal length 0',
                   'show clock detail',
@@ -123,16 +126,27 @@ nxos_cmds_list = ['terminal length 0',
                   'show vtp password',
                   'show vlan brief',
                   'show ip interface brief',
+                  'show interface brief',
                   'show cdp neighbors',
                   'show ip route',
                   'show ip ospf neighbor',
                   'show ip ospf interface brief',
                   'show ip eigrp neighbors',
                   'show ip eigrp interfaces',
-                  'show running-config']
+                  'show running-config',
+                  'terminal length 24']
 
 a10_cmds_list = ['terminal length 0',
-                 'show tech']
+                 'show clock',
+                 'show version',
+                 'show cpu',
+                 'show memory',
+                 'show log',
+                 'show ip interfaces',
+                 'show interfaces brief',
+                 'show vrrp-a',
+                 'show running-config',
+                 'terminal length 24']
 
 end_cmd = '\n'
 

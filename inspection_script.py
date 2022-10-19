@@ -146,6 +146,8 @@ a10_cmds_list = ['terminal length 0',
                  'show ip interfaces',
                  'show interfaces brief',
                  'show vrrp-a',
+                 'show ip route',
+                 'show gslb group brief',
                  'show running-config',
                  'terminal length 24']
 

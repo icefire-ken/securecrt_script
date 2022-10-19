@@ -192,5 +192,4 @@ def main():
             crt.Screen.Send(cmd + end_cmd * 4)
             crt.Sleep(sleep_time)
 
-
 main()

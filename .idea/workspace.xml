@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="068655bd-6dea-40b4-91e3-3ce984059ed5" name="Changes" comment="2022.08.31">
-      <change beforePath="$PROJECT_DIR$/inspection_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/inspection_script.py" afterDir="false" />
+    <list default="true" id="068655bd-6dea-40b4-91e3-3ce984059ed5" name="Changes" comment="2022.10.19">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +21,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;D:/4_Learn/Python Dev/Projects/SecureCRT Script&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "D:/4_Learn/Python Dev/Projects/SubMask Calc",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -113,7 +113,49 @@
       <option name="project" value="LOCAL" />
       <updated>1661923760485</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2022.08.31">
+      <created>1662010895027</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662010895027</updated>
+    </task>
+    <task id="LOCAL-00013" summary="2022.08.31">
+      <created>1662011013693</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662011013693</updated>
+    </task>
+    <task id="LOCAL-00014" summary="2022.08.31">
+      <created>1662085373980</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1662085373980</updated>
+    </task>
+    <task id="LOCAL-00015" summary="2022.10.19">
+      <created>1666156816493</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666156816493</updated>
+    </task>
+    <task id="LOCAL-00016" summary="2022.10.19">
+      <created>1666156877543</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666156877543</updated>
+    </task>
+    <task id="LOCAL-00017" summary="2022.10.19">
+      <created>1666582070376</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666582070376</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +185,7 @@
     <MESSAGE value="2022.05.30" />
     <MESSAGE value="2022.06.08" />
     <MESSAGE value="2022.08.31" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022.08.31" />
+    <MESSAGE value="2022.10.19" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022.10.19" />
   </component>
 </project>

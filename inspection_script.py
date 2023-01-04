@@ -2,6 +2,7 @@
 # $interface = "1.0"
 
 
+
 cisco_cmds_list = ['terminal length 0',
                    'show clock detail',
                    'show inventory',

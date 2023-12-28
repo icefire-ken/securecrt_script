@@ -127,6 +127,7 @@ nxos_cmds_list = ['terminal length 0',
                   'show vtp status',
                   'show vtp password',
                   'show vlan brief',
+                  'show fex',
                   'show ip interface brief',
                   'show interface brief',
                   'show interfaces status',
@@ -154,13 +155,29 @@ a10_cmds_list = ['terminal length 0',
                  'show running-config',
                  'terminal length 24']
 
+ruijie_cmds_list = ['terminal length 0',
+                   'show clock',
+                   'show cpu',
+                   'show memory',
+                   'show license all-license',
+                   'show logging',
+                   'show version',
+                   'show vlan',
+                   'show ip interface brief',
+                   'show interfaces status',
+                   'show ip route',
+                   'show ip ospf neighbor',
+                   'show ip ospf interface brief',
+                   'show running-config',
+                   'terminal length 24']
+
 end_cmd = '\n'
 
 sleep_time = 2
 
-supported_device_type = ['cisco', 'huawei', 'h3c', 'asa', 'nxos', 'a10']
+supported_device_type = ['cisco', 'huawei', 'h3c', 'asa', 'nxos', 'a10', 'ruijie']
 
-device_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、huawei、h3c、asa、nxos、a10', '请确认设备类型')
+device_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、huawei、h3c、asa、nxos、a10、ruijie', '请确认设备类型')
 
 if device_type not in supported_device_type:
     crt.Dialog.MessageBox('尚不支持的设备类型。', '设备类型错误', 48)
@@ -194,6 +211,9 @@ def main():
         for cmd in a10_cmds_list:
             crt.Screen.Send(cmd + end_cmd * 4)
             crt.Sleep(sleep_time)
-
+    elif device_type == 'ruijie':
+        for cmd in ruijie_cmds_list:
+            crt.Screen.Send(cmd + end_cmd * 4)
+            crt.Sleep(sleep_time)
 
 main()

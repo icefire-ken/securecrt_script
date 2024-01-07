@@ -12,7 +12,7 @@
 
    ![13-14-46](https://github.com/icefire-ken/SecureCRT_Script/assets/26742041/0b6db060-fc07-487c-9f3e-865f17357fea)
 
-   使用者按提示输入正确的设备类型就可以开始巡检了。
+   使用者按提示输入正确的[设备类型]就可以开始巡检了。
 
 5. 巡检时记得开启记录Log Session记录回显内容。
 

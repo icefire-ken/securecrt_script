@@ -8,11 +8,13 @@
 
 1. 在SecureCRT的Session Options —— Terminal —— Mapped Keys， 映射快捷键（如F1），Function选择Run Script，选择本脚本。
 
-2. 之后，按F1执行脚本会弹出如下提示：![13-14-46](https://github.com/icefire-ken/SecureCRT_Script/assets/26742041/0b6db060-fc07-487c-9f3e-865f17357fea)
+2. 之后，按F1执行脚本会弹出如下提示：
+
+   ![13-14-46](https://github.com/icefire-ken/SecureCRT_Script/assets/26742041/0b6db060-fc07-487c-9f3e-865f17357fea)
 
    使用者按提示输入正确的设备类型就可以开始巡检了。
 
-4. 巡检时记得开启记录Log Session记录回显内容。
+5. 巡检时记得开启记录Log Session记录回显内容。
 
 # 更新日志
 

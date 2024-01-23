@@ -201,7 +201,8 @@ input_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、hua
 crt.Screen.Synchronous = True
 
 
-def send_cmds(cmds_list):  # 遍历设备类型的巡检命令列表，发送命令
+# 遍历设备类型的巡检命令列表，发送命令
+def send_cmds(cmds_list):
     crt.Screen.Send('\n' * 3)
     for cmd in cmds_list:
         crt.Screen.Send(cmd + '\n' * 4)

@@ -1,7 +1,7 @@
 # $language = "Python"
 # $interface = "1.0"
 
-
+# 设备类型巡检命令列表
 cisco_cmds_list = ['terminal length 0',
                    'show clock detail',
                    'show inventory',
@@ -156,20 +156,20 @@ a10_cmds_list = ['terminal length 0',
                  'terminal length 24']
 
 ruijie_cmds_list = ['terminal length 0',
-                   'show clock',
-                   'show cpu',
-                   'show memory',
-                   'show license all-license',
-                   'show logging',
-                   'show version',
-                   'show vlan',
-                   'show ip interface brief',
-                   'show interfaces status',
-                   'show ip route',
-                   'show ip ospf neighbor',
-                   'show ip ospf interface brief',
-                   'show running-config',
-                   'terminal length 24']
+                    'show clock',
+                    'show cpu',
+                    'show memory',
+                    'show license all-license',
+                    'show logging',
+                    'show version',
+                    'show vlan',
+                    'show ip interface brief',
+                    'show interfaces status',
+                    'show ip route',
+                    'show ip ospf neighbor',
+                    'show ip ospf interface brief',
+                    'show running-config',
+                    'terminal length 24']
 
 linux_cmds_list = ['uname -a',
                    'head -n 1 /etc/issue',
@@ -180,53 +180,39 @@ linux_cmds_list = ['uname -a',
                    'route -n',
                    'netstat -lntp']
 
-end_cmd = '\n'
+# 巡检命令集合字典
+cmds_dict = {'cisco': cisco_cmds_list,
+             'huawei': huawei_cmds_list,
+             'h3c': h3c_cmds_list,
+             'asa': ciscoasa_cmds_list,
+             'nxos': nxos_cmds_list,
+             'a10': a10_cmds_list,
+             'ruijie': ruijie_cmds_list,
+             'linux': linux_cmds_list,
+             }
 
-sleep_time = 2
+# 支持的设备类型
+supported_devices_type = ['cisco', 'huawei', 'h3c', 'asa', 'nxos', 'a10', 'ruijie', 'linux']
 
-supported_device_type = ['cisco', 'huawei', 'h3c', 'asa', 'nxos', 'a10', 'ruijie','linux']
+# 弹出窗口，提示工程师输入支持的设备类型
+input_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、huawei、h3c、asa、nxos、a10、ruijie、linux', '请确认设备类型')
 
-device_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、huawei、h3c、asa、nxos、a10、ruijie、linux', '请确认设备类型')
-
-if device_type not in supported_device_type:
-    crt.Dialog.MessageBox('尚不支持的设备类型。', '设备类型错误', 48)
-
+# 设置屏幕同步
 crt.Screen.Synchronous = True
 
 
-def main():
-    crt.Screen.Send(end_cmd * 3)
-    if device_type == 'cisco':
-        for cmd in cisco_cmds_list:
-            crt.Screen.Send(cmd + end_cmd * 4)
-            crt.Sleep(sleep_time)
-    elif device_type == 'huawei':
-        for cmd in huawei_cmds_list:
-            crt.Screen.Send(cmd + end_cmd * 4)
-            crt.Sleep(sleep_time)
-    elif device_type == 'h3c':
-        for cmd in h3c_cmds_list:
-            crt.Screen.Send(cmd + end_cmd * 4)
-            crt.Sleep(sleep_time)
-    elif device_type == 'asa':
-        for cmd in ciscoasa_cmds_list:
-            crt.Screen.Send(cmd + end_cmd * 4)
-            crt.Sleep(sleep_time)
-    elif device_type == 'nxos':
-        for cmd in nxos_cmds_list:
-            crt.Screen.Send(cmd + end_cmd * 4)
-            crt.Sleep(sleep_time)
-    elif device_type == 'a10':
-        for cmd in a10_cmds_list:
-            crt.Screen.Send(cmd + end_cmd * 4)
-            crt.Sleep(sleep_time)
-    elif device_type == 'ruijie':
-        for cmd in ruijie_cmds_list:
-            crt.Screen.Send(cmd + end_cmd * 4)
-            crt.Sleep(sleep_time)
-    elif device_type == 'linux':
-        for cmd in linux_cmds_list:
-            crt.Screen.Send(cmd + end_cmd * 4)
-            crt.Sleep(sleep_time)
+def send_cmds(cmds_list):
+    '''
+    遍历设备类型的巡检命令列表，发送命令
+    '''
+    crt.Screen.Send('\n' * 3)
+    for cmd in cmds_list:
+        crt.Screen.Send(cmd + '\n' * 4)
+        crt.Sleep(2)
 
-main()
+
+# 如果输入的设备类型在支持列表中，调用发送命令函数，否则弹出窗口提示设备类型错误
+if input_type in supported_devices_type:
+    send_cmds(cmds_dict[input_type])  # 发送命令，根据输入的设备类型，传入不同的命令
+else:
+    crt.Dialog.MessageBox('尚不支持的设备类型！', '设备类型错误', 48)

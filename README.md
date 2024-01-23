@@ -12,7 +12,7 @@
 
 2. 之后，按F1执行脚本会弹出如下提示：
 
-   ![13-14-46](https://github.com/icefire-ken/SecureCRT_Script/assets/26742041/0b6db060-fc07-487c-9f3e-865f17357fea)
+   ![Ov7KJr.png](https://ooo.0x0.ooo/2024/01/23/Ov7KJr.png)
 
    按提示输入正确的【设备类型】就可以开始巡检了。
 
@@ -33,11 +33,11 @@
 - nxos
 - a10
 - ruijie
-- linux（待更新）
+- linux
 
 # 更新日志
 
-## 待更新
+## 2024.01.23
 
 - 添加了Linux设备类型的巡检命令。（可根据使用需求自行更改）
 

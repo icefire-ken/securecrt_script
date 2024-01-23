@@ -171,13 +171,22 @@ ruijie_cmds_list = ['terminal length 0',
                    'show running-config',
                    'terminal length 24']
 
+linux_cmds_list = ['uname -a',
+                   'head -n 1 /etc/issue',
+                   'cat /proc/cpuinfo',
+                   'hostname',
+                   'ipconfig',
+                   'iptables -L',
+                   'route -n',
+                   'netstat -lntp']
+
 end_cmd = '\n'
 
 sleep_time = 2
 
-supported_device_type = ['cisco', 'huawei', 'h3c', 'asa', 'nxos', 'a10', 'ruijie']
+supported_device_type = ['cisco', 'huawei', 'h3c', 'asa', 'nxos', 'a10', 'ruijie','linux']
 
-device_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、huawei、h3c、asa、nxos、a10、ruijie', '请确认设备类型')
+device_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、huawei、h3c、asa、nxos、a10、ruijie、linux', '请确认设备类型')
 
 if device_type not in supported_device_type:
     crt.Dialog.MessageBox('尚不支持的设备类型。', '设备类型错误', 48)
@@ -213,6 +222,10 @@ def main():
             crt.Sleep(sleep_time)
     elif device_type == 'ruijie':
         for cmd in ruijie_cmds_list:
+            crt.Screen.Send(cmd + end_cmd * 4)
+            crt.Sleep(sleep_time)
+    elif device_type == 'linux':
+        for cmd in linux_cmds_list:
             crt.Screen.Send(cmd + end_cmd * 4)
             crt.Sleep(sleep_time)
 

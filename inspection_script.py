@@ -195,7 +195,8 @@ cmds_dict = {'cisco': cisco_cmds_list,
 supported_devices_type = ['cisco', 'huawei', 'h3c', 'asa', 'nxos', 'a10', 'ruijie', 'linux']
 
 # 弹出窗口，提示工程师输入支持的设备类型
-input_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、huawei、h3c、asa、nxos、a10、ruijie、linux', '请确认设备类型')
+input_type = crt.Dialog.Prompt('请输入支持的设备类型：\n  cisco、huawei、h3c、asa、nxos、'
+                               '\n  a10、ruijie、linux', '请确认设备类型')
 
 # 设置屏幕同步
 crt.Screen.Synchronous = True

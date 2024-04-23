@@ -2,7 +2,7 @@
 
 - 工作中经常需要对客户的网络设备进行巡检，如果工程师PC可以接入到客户的网络中去使用远程登录的方式巡检（如SSH），使用[Devices_Inspection脚本](https://github.com/icefire-ken/Devices_Inspection)就可以完成巡检操作；
 
-- 但是偶尔也会遇到直接从Console口登录设备进行巡检的情况，就需要从SecureCRT软件依次输入多个命令收集巡检信息的操作；
+- 但是偶尔也会遇到直接从Console口登录设备进行巡检的情况，就需要从SecureCRT（或Xshell）软件依次输入多个命令收集巡检信息的操作；
 
 - 本脚本可以在SecureCRT中运行，利用脚本代替手动输入巡检命令的过程。 
 
@@ -10,9 +10,11 @@
 
 1. 在SecureCRT的Session Options —— Terminal —— Mapped Keys， 映射快捷键（如F1），Function选择Run Script，选择本脚本。
 
+   在Xshell的工具 —— 按键对应 —— 新建，提示输入快捷键（如F1），操作类型选择运行脚本，在路径上选择本脚本。
+
 2. 之后，按F1执行脚本会弹出如下提示：
 
-   ![Ov7KJr.png](https://ooo.0x0.ooo/2024/01/23/Ov7KJr.png)
+   ![device_types.png](https://github.com/icefire-ken/securecrt_script/blob/master/images/device_types.png)
 
    按提示输入正确的【设备类型】就可以开始巡检了。
 
@@ -36,6 +38,10 @@
 - linux
 
 # 更新日志
+
+## 2024.04.23
+
+- 添加Xshell软件支持的Python脚本。（inspection_script_xshell.py）
 
 ## 2024.01.23
 

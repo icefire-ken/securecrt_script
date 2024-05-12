@@ -35,11 +35,15 @@
   ![crt95.png](https://github.com/icefire-ken/securecrt_script/blob/master/images/crt95.png)
   
   原因：
+- 
   SecureCRT 9.5版本安装时，默认不再安装Python 2.7环境，需要手动勾选。
   
   解决：
+
   1、安装时勾选Python 2.7环境。
+
   2、安装后，在控制面板 —— 添加/删除程序，编辑安装好的SecureCRT，勾选添加Python 2.7环境。
+
   3、在PC上直接安装Python 3.x环境。（目前最高支持Python 3.11）
 
 # 目前支持的设备类型

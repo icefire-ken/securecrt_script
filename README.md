@@ -32,7 +32,7 @@
 
 - 运行脚本出现如下提示：
   
-  ![crt95.jpg](https://github.com/icefire-ken/securecrt_script/blob/master/images/crt95.jpg)
+  ![crt95.png](https://github.com/icefire-ken/securecrt_script/blob/master/images/crt95.png)
   
   原因：
   SecureCRT 9.5版本安装时，默认不再安装Python 2.7环境，需要手动勾选。

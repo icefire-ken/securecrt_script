@@ -62,7 +62,7 @@ h3c_cmds_list = ['screen-length disable',
                  'display clock',
                  'display device manuinfo',
                  'display fan',
-                 'display transceiver disgnosis interface',
+                 'display transceiver diagnosis interface',
                  'display environment',
                  'display power',
                  'display boot-loader',
@@ -183,6 +183,10 @@ linux_cmds_list = ['uname -a',
                    'route -n',
                    'netstat -lntp']
 
+fortinet_cmds_list = []
+
+juniper_junos_cmds_list = []
+
 # 巡检命令集合字典
 cmds_dict = {'cisco': cisco_cmds_list,
              'huawei': huawei_cmds_list,
@@ -218,3 +222,4 @@ if input_type in supported_devices_type:
     send_cmds(cmds_dict[input_type])  # 发送命令，根据输入的设备类型，传入不同的命令
 else:
     xsh.Dialog.MessageBox('尚不支持的设备类型！', '设备类型错误', 48)
+

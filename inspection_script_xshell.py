@@ -37,7 +37,7 @@ cisco_cmds_list = ['terminal length 0',
 
 huawei_cmds_list = ['screen-length 0 temporary',
                     'display clock',
-                    'display esn',
+                    'display device esn',
                     'display elabel brief',
                     'display environment',
                     'display power',
@@ -80,6 +80,7 @@ h3c_cmds_list = ['screen-length disable',
                  'display ip routing-table',
                  'display ospf peer',
                  'display ospf interface',
+                 'display vrrp',
                  'display current-configuration',
                  'undo screen-length disable']
 

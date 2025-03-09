@@ -1,7 +1,6 @@
 ﻿# 简介
 
--
-工作中经常需要对客户的网络设备进行巡检，如果工程师PC可以接入到客户的网络中去使用远程登录的方式巡检（如SSH），使用[Devices_Inspection脚本](https://github.com/icefire-ken/Devices_Inspection)
+- 工作中经常需要对客户的网络设备进行巡检，如果工程师PC可以接入到客户的网络中去使用远程登录的方式巡检（如SSH），使用[Devices_Inspection脚本](https://github.com/icefire-ken/Devices_Inspection)
 就可以完成巡检操作；
 
 - 但是偶尔也会遇到直接从Console口登录设备进行巡检的情况，就需要从SecureCRT（或Xshell）软件依次输入多个命令收集巡检信息的操作；

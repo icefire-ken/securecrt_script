@@ -3,7 +3,7 @@
 
 import pandas
 
-INFO_PATH = r'D:\4_Learn\Python Projects\devices_inspection\info.xlsx'
+INFO_PATH = r'D:\4_Learn\Python\devices_inspection\info.xlsx'
 
 # 支持的设备类型
 supported_devices_type = ['cisco', 'nxos', 'asa', 'huawei', 'h3c', 'a10', 'ruijie', 'linux']

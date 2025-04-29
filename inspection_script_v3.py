@@ -45,8 +45,8 @@ def insert_cmds(cmds_dict, input_type):
             prepend_cmd = 'screen-length disable'
             append_cmd = 'undo screen-length disable'
         case 'a10':
-            prepend_cmd = 'screen-length 0 temporary'
-            append_cmd = 'screen-length 24 temporary'
+            prepend_cmd = 'terminal length 0'
+            append_cmd = 'terminal length 24'
         case 'ruijie_os':
             prepend_cmd = 'screen-length 0 temporary'
             append_cmd = 'screen-length 24 temporary'
